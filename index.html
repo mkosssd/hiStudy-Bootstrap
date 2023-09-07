@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+            integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+            crossorigin="anonymous"
+        >
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container py-2">
+                    <div class="col-xs-4">
+                        <span class="small">
+                            <img src="https://rainbowit.net/html/histudy/assets/images/icons/en-us.png" alt="flag">
+                            English
+                            <i class="bi bi-chevron-down small"></i>
+                        </span>
+                        <span class="small">
+                            USD
+                            <i class="bi bi-chevron-down small"></i>
+                        </span>
+                    </div>
+                    <div class="form-group col-6 d-none d-md-block">
+                        <div class="d-flex  py-1 px-3 rounded p-3-pill bg-white ">
+                            <input class="form-control border-0 shadow-none" type="text" placeholder="Search Course">
+                            <button class="btn">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="btn">
+                            <i class="bi bi-cart px-1"></i>
+                            <span class=" d-none d-md-inline">Cart</span>
+                        </button>
+                        <button class="btn">
+                            <i class="bi bi-person px-1"></i>
+                            <span class=" d-none d-md-inline"> Admin</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top top-0 bg-light fw-semibold">
+                <div class="container">
+                    <div class="col-3">
+                        <a href="#" class="col-6">
+                            <img
+                                src="https://rainbowit.net/html/histudy/assets/images/logo/logo.png"
+                                class="img-fluid"
+                                alt=""
+                                width="150px"
+                            >
+                        </a>
+                        <button class="btn rounded p-3-pill bg-white col-6">
+                            <i class="bi bi-grid"></i>
+                            <span class=" d-none d-xl-inline">Category</span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#main-nav"
+                            aria-controls="main-nav"
+                            aria-expanded="false"
+                            aria-label="Toggle Navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-center col-6" id="main-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link px-4">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link px-4">
+                                    Dashboard
+                                    <i class="bi bi-chevron-down small"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link px-4">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link px-4">Elements</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link px-4">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <button class=" col btn btn-primary py-2 px-4 d-none d-lg-inline">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="col-xs-12 py-5" style="background-image: url('https://rainbowit.net/html/histudy/assets/images/bg/bg-image-19.jpg'); background-repeat: no-repeat; height:100%; width:100%;">
+                <div class="container  text-white py-5">
+                    <div class="  py-5">
+                        <h1 class="col-lg-5 col-md-7 col-sm-12 fw-bolder display-5">
+                            <span id="brandName">LoStudy</span>
+                            Starter is a community for creative people
+                        </h1>
+                        <p class="h6" class="lead col-4">
+                            We just don't give our student only lecture but real life
+						experience.
+                        </p>
+                        <div class="actions my-5">
+                            <button class="btn text-white border-1 border-white py-3 px-4 rounded-pill">
+                                Explore Courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                            <a href="#" class="text-white ms-5">
+                                Start learning
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container courses my-5">
+                <div class="row fRow text-white text-center">
+                    <div class="col-3">
+                        <div class="border-secondary border rounded p-3">
+                            <p class="h6">Web Design</p>
+                            <span>
+                                15 courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="border-secondary border rounded p-3">
+                            <p class="h6">Graphic Design</p>
+                            <span>
+                                15 courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="border-secondary border rounded p-3">
+                            <p class="h6">Personal Development</p>
+                            <span>
+                                15 courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="border-secondary border rounded p-3">
+                            <p class="h6">IT and Software</p>
+                            <span>
+                                15 courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row sRow text-white text-center">
+                    <div class="col-3 ">
+                        <div class="border-secondary border rounded p-3">
+                            <p class="h6">Sales Marketing</p>
+                            <span>
+                                15 courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="border-secondary border rounded p-3">
+                            <p class="h6">Art & humanities</p>
+                            <span>
+                                15 courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="border-secondary border rounded p-3">
+                            <p class="h6">Mobile Application</p>
+                            <span>
+                                15 courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="border-secondary border rounded p-3">
+                            <p class="h6">Finance & Accounting</p>
+                            <span>
+                                15 courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-image: url('https://rainbowit.net/html/histudy/assets/images/bg/bg-image-20.jpg');background-size: cover;filter: grayscale(30%); background-position: center; background-attachment: fixed; background-repeat: no-repeat;height:100%; width:100%;">
+                <div class="container py-5 my-5">
+                    <div class="row py-5 my-5 text-white ms-5">
+                        <div class="col-2 py-5 m-5">
+                            <span class="digit display-3 fw-bold " id="counter">
+                                475 +
+                            </span>
+                            <span class="digitOf">Learners & counting</span>
+                        </div>
+                        <div class="col-2 py-5 m-5">
+                            <span class="digit display-3 fw-bold" id="counter2">
+                                45 +
+                            </span>
+                            <span class="digitOf">Courses & Video</span>
+                        </div>
+                        <div class="col-2 py-5 m-5">
+                            <span class="digit display-3 fw-bold" id="counter3">
+                                365 +
+                            </span>
+                            <span class="digitOf">Certified Students</span>
+                        </div>
+                        <div class="col-2 py-5 m-5 ">
+                            <span class="digit display-3 fw-bold" id="counter4">
+                                215 +
+                            </span>
+                            <span class="digitOf">Certified Students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="head">
+                    <h2 class="fw-bold display-6">Student's Feedback</h2>
+                    <p class="lead col-10 m-auto">
+                        Learning communicate to global world and build a bright future and
+						career development, increase your skill with our histudy.
+                    </p>
+                </div>
+                <div class="scroll">
+                    <div class="cardBox">
+                        <div class="card">
+                            <div class="userInfo">
+                                <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
+                                <div class="info">
+                                    <h3>Martha Moldanado</h3>
+                                    <span>Executive Chairman @ Google</span>
+                                </div>
+                            </div>
+                            <div class="feed">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ullam nemo autem adipisci laborum, ratione dolorum?
+                                </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardBox">
+                        <div class="card">
+                            <div class="userInfo">
+                                <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-02.png" alt="">
+                                <div class="info">
+                                    <h3>Avaya Morito</h3>
+                                    <span>CEO @ Google</span>
+                                </div>
+                            </div>
+                            <div class="feed">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ullam nemo autem adipisci laborum, ratione dolorum?
+                                </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardBox">
+                        <div class="card">
+                            <div class="userInfo">
+                                <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
+                                <div class="info">
+                                    <h3>Martha Moldanado</h3>
+                                    <span>Executive Chairman @ Google</span>
+                                </div>
+                            </div>
+                            <div class="feed">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ullam nemo autem adipisci laborum, ratione dolorum?
+                                </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardBox">
+                        <div class="card">
+                            <div class="userInfo">
+                                <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
+                                <div class="info">
+                                    <h3>Martha Moldanado</h3>
+                                    <span>Executive Chairman @ Google</span>
+                                </div>
+                            </div>
+                            <div class="feed">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ullam nemo autem adipisci laborum, ratione dolorum?
+                                </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</html>

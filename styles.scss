@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+	font-size: 100%;
+}
+$primary: #2f57ef;
+
+i {
+	font-size: 15px;
+}
+.courses {
+	.fRow {
+		.col-3 div{ 
+			&:nth-child(1) {
+				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+					url("https://rainbowit.net/html/histudy/assets/images/category/image/web-design.jpg");
+				background-size: cover;
+				background-position-y: -3em;
+			}
+			&:nth-child(2) {
+				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+					url("https://rainbowit.net/html/histudy/assets/images/category/image/graphic-design.jpg");
+				background-size: cover;
+				background-position-y: -3em;
+			}
+			&:nth-child(3) {
+				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+					url("https://rainbowit.net/html/histudy/assets/images/category/image/personal-development.jpg");
+				background-size: cover;
+				background-position-y: -3em;
+			}
+			&:nth-child(4) {
+				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+					url("https://rainbowit.net/html/histudy/assets/images/category/image/software.jpg");
+				background-size: cover;
+				background-position-y: -3em;
+			}
+        }
+        }
+        .sRow div div{
+        &:nth-child(1) {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://rainbowit.net/html/histudy/assets/images/category/image/sales.jpg");
+            background-size: cover;
+            background-position-y: -3em;
+        }
+        &:nth-child(2) {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://rainbowit.net/html/histudy/assets/images/category/image/arts.jpg");
+            background-size: cover;
+            background-position-y: -3em;
+        }
+        &:nth-child(3) {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://rainbowit.net/html/histudy/assets/images/category/image/mobile.jpg");
+            background-size: cover;
+            background-position-y: -3em;
+        }
+        &:nth-child(4) {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://rainbowit.net/html/histudy/assets/images/category/image/finance.jpg");
+            background-size: cover;
+            background-position-y: -3em;
+        }
+    }
+}
+
+@import "./node_modules/bootstrap/scss/bootstrap";
