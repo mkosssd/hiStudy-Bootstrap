@@ -67,5 +67,50 @@ i {
         }
     }
 }
+.card {
+    user-select: none;
+    padding: 6vh 3.4ch;
+
+    .userInfo {
+        display: flex;
+        img {
+            width: 60px;
+            border: 5px white solid;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .info {
+            margin: auto;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3 {
+                font-size: min(2em, 20px);
+            }
+            span {
+                font-size: 13px;
+                color: #aaa;
+            }
+        }
+    }
+}
+
+
+.feed {
+p {
+    color: #686868;
+    text-align: left;
+    font-size: 17px;
+}
+.rating {
+    float: left;
+    margin-top: 0.5em;
+    i {
+        font-size: 12px;
+    }
+}
+}
+
 
 @import "./node_modules/bootstrap/scss/bootstrap";

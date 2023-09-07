@@ -53,6 +53,49 @@ i {
   background-position-y: -3em;
 }
 
+.card {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 6vh 3.4ch;
+}
+.card .userInfo {
+  display: flex;
+}
+.card .userInfo img {
+  width: 60px;
+  border: 5px white solid;
+  height: 60px;
+  border-radius: 50%;
+}
+.card .userInfo .info {
+  margin: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .userInfo .info h3, .card .userInfo .info .h3 {
+  font-size: min(2em, 20px);
+}
+.card .userInfo .info span {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.feed p {
+  color: #686868;
+  text-align: left;
+  font-size: 17px;
+}
+.feed .rating {
+  float: left;
+  margin-top: 0.5em;
+}
+.feed .rating i {
+  font-size: 12px;
+}
+
 /*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
