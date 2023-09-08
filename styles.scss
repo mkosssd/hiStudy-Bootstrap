@@ -13,104 +13,211 @@ i {
 }
 .courses {
 	.fRow {
-		.col-3 div{ 
-			&:nth-child(1) {
+		.col-xl-3 {
+			&:nth-child(1) div {
 				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 					url("https://rainbowit.net/html/histudy/assets/images/category/image/web-design.jpg");
 				background-size: cover;
 				background-position-y: -3em;
 			}
-			&:nth-child(2) {
+			&:nth-child(2) div {
 				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 					url("https://rainbowit.net/html/histudy/assets/images/category/image/graphic-design.jpg");
 				background-size: cover;
 				background-position-y: -3em;
 			}
-			&:nth-child(3) {
+			&:nth-child(3) div {
 				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 					url("https://rainbowit.net/html/histudy/assets/images/category/image/personal-development.jpg");
 				background-size: cover;
 				background-position-y: -3em;
 			}
-			&:nth-child(4) {
+			&:nth-child(4) div {
 				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 					url("https://rainbowit.net/html/histudy/assets/images/category/image/software.jpg");
 				background-size: cover;
 				background-position-y: -3em;
 			}
-        }
-        }
-        .sRow div div{
-        &:nth-child(1) {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url("https://rainbowit.net/html/histudy/assets/images/category/image/sales.jpg");
-            background-size: cover;
-            background-position-y: -3em;
-        }
-        &:nth-child(2) {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url("https://rainbowit.net/html/histudy/assets/images/category/image/arts.jpg");
-            background-size: cover;
-            background-position-y: -3em;
-        }
-        &:nth-child(3) {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url("https://rainbowit.net/html/histudy/assets/images/category/image/mobile.jpg");
-            background-size: cover;
-            background-position-y: -3em;
-        }
-        &:nth-child(4) {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url("https://rainbowit.net/html/histudy/assets/images/category/image/finance.jpg");
-            background-size: cover;
-            background-position-y: -3em;
-        }
-    }
+		}
+	}
+	.sRow .col-xl-3 {
+		&:nth-child(1) div {
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+				url("https://rainbowit.net/html/histudy/assets/images/category/image/sales.jpg");
+			background-size: cover;
+			background-position-y: -3em;
+		}
+		&:nth-child(2) div {
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+				url("https://rainbowit.net/html/histudy/assets/images/category/image/arts.jpg");
+			background-size: cover;
+			background-position-y: -3em;
+		}
+		&:nth-child(3) div {
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+				url("https://rainbowit.net/html/histudy/assets/images/category/image/mobile.jpg");
+			background-size: cover;
+			background-position-y: -3em;
+		}
+		&:nth-child(4) div {
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+				url("https://rainbowit.net/html/histudy/assets/images/category/image/finance.jpg");
+			background-size: cover;
+			background-position-y: -3em;
+		}
+	}
 }
 .card {
-    user-select: none;
-    padding: 6vh 3.4ch;
+	user-select: none;
+	padding: 6vh 3.4ch;
 
-    .userInfo {
-        display: flex;
-        img {
-            width: 60px;
-            border: 5px white solid;
-            height: 60px;
-            border-radius: 50%;
-        }
-        .info {
-            margin: auto;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            h3 {
-                font-size: min(2em, 20px);
-            }
-            span {
-                font-size: 13px;
-                color: #aaa;
-            }
-        }
-    }
+	.userInfo {
+		display: flex;
+		img {
+			width: 60px;
+			border: 5px white solid;
+			height: 60px;
+			border-radius: 50%;
+		}
+		.info {
+			margin: auto;
+			text-align: left;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			h3 {
+				font-size: min(2em, 20px);
+			}
+			span {
+				font-size: 13px;
+				color: #aaa;
+			}
+		}
+	}
 }
-
 
 .feed {
-p {
-    color: #686868;
-    text-align: left;
-    font-size: 17px;
+	p {
+		color: #686868;
+		text-align: left;
+		font-size: 17px;
+	}
+	.rating {
+		float: left;
+		margin-top: 0.5em;
+		i {
+			font-size: 12px;
+		}
+	}
 }
-.rating {
-    float: left;
-    margin-top: 0.5em;
-    i {
-        font-size: 12px;
-    }
+.news {
+	background: linear-gradient(
+		270deg,
+		rgba(185, 102, 231, 0.8) 10%,
+		rgba(47, 87, 239, 1) 80%
+	);
+	width: 100%;
 }
+.bgCurve {
+	background-image: url("https://rainbowit.net/html/histudy/assets/images/bg/banner-bg-shape-1.png");
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	top: -17.5vh;
+	width: 100%;
+	padding: 9ch 0;
+	background-size: cover;
+}@mixin buttonStyle {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	padding: 0 10px;
 }
+.feedback {
+	button {
+		@include buttonStyle();
+		border: 1px solid #ddd;
+		z-index: 50;
+		border-radius: 50%;
+		height: 3em;
+		width: 3em;
+		background-color: white;
+		position: relative;
+		top: 11em;
+		// opacity: 0;
+		transition: opacity 0.5s;
+	}
+	&:hover button {
+	    transition: opacity 0.5s;
+	    opacity: 1;
+	}
+	.right {
+	    right: -30vw;
+	}
+	.left {
+	    left: -30vw;
+	}
+	.scroll {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		// width: 1290px;
+		display: grid;
+		overflow-x: scroll;
+		grid-template-columns: repeat(5, 350px);
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		.cardBox {
+			background-color: white;
+			padding: 0 5px;
+			.card {
+				border-radius: 5px;
+				user-select: none;
+				background-color: #2f57ef21;
+				.userInfo {
+					display: flex;
+					img {
+						width: 60px;
+						border: 5px white solid;
+						height: 60px;
+						border-radius: 50%;
+					}
+					.info {
+						margin: auto;
+						text-align: left;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						h3 {
+							font-size: min(2em, 20px);
+						}
+						span {
+							font-size: 13px;
+							color: #aaa;
+						}
+					}
+				}
+			}
+		}
 
+		.feed {
+			p {
+				color: #686868;
+				text-align: left;
+				font-size: 17px;
+			}
+			.rating {
+				float: left;
+				margin-top: 0.5em;
+				i {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+.dsds{
+    border: 1px solid red;
+}
 
 @import "./node_modules/bootstrap/scss/bootstrap";

@@ -15,7 +15,7 @@
     </head>
     <body>
         <header>
-            <div class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="navbar navbar-expand-lg navbar-light bg-white">
                 <div class="container py-2">
                     <div class="col-xs-4">
                         <span class="small">
@@ -29,7 +29,7 @@
                         </span>
                     </div>
                     <div class="form-group col-6 d-none d-md-block">
-                        <div class="d-flex  py-1 px-3 rounded p-3-pill bg-white ">
+                        <div class="d-flex  py-1 px-3 rounded rounded-pill bg-white ">
                             <input class="form-control border-0 shadow-none" type="text" placeholder="Search Course">
                             <button class="btn">
                                 <i class="bi bi-search"></i>
@@ -48,63 +48,92 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top top-0 bg-light fw-semibold">
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top top-0 bg-white fw-semibold">
                 <div class="container">
-                    <div class="col-3">
-                        <a href="#" class="col-6">
-                            <img
+                    <div class="col3">
+
+                        <div class="row">
+                            <a href="#" class="col-7">
+                                <img
                                 src="https://rainbowit.net/html/histudy/assets/images/logo/logo.png"
                                 class="img-fluid"
                                 alt=""
                                 width="150px"
-                            >
-                        </a>
-                        <button class="btn rounded p-3-pill bg-white col-6">
-                            <i class="bi bi-grid"></i>
-                            <span class=" d-none d-xl-inline">Category</span>
-                        </button>
+                                >
+                            </a>
+                            <button class="btn rounded rounded-pill p-2 bg-light col-5">
+                                <i class="bi bi-grid"></i>
+                                <span class=" d-none d-xl-inline small">Category</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="col">
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#main-nav"
-                            aria-controls="main-nav"
-                            aria-expanded="false"
-                            aria-label="Toggle Navigation"
-                        >
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse justify-content-center col-6" id="main-nav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item ">
-                                <a href="#" class="nav-link">Home</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#sidebar"
+                        aria-controls="sidebar"
+                        aria-expanded="false"
+                        aria-label="offcanvasLabel"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div
+                        class="navbar-collapse offcanvas offcanvas-start"
+                        data-bs-backdrop="false"
+                        tabindex="-1"
+                        id="sidebar"
+                        aria-labelledby="offcanvasLabel"
+                    >
+                        <div class="offcanvas-header ">
+                            <button
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                                type="button"
+                                class="btn-close"
+                            ></button>
+                        </div>
+                        <ul class="navbar-nav col-10">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link py-4 px-3 ">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link px-4">Courses</a>
+                                <a href="#" class="nav-link py-4 px-3">Courses</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link px-4">
+                            <li class="nav-item dropdown p-3 border-0">
+                                <button
+                                    class="btn dropdown-toggle nav-link"
+                                    type="button"
+                                    id="dropdownMenu2"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
                                     Dashboard
-                                    <i class="bi bi-chevron-down small"></i>
-                                </a>
+                                </button>
+                                <ul class="dropdown-menu px-3 py-3 border-0 bg-white" aria-labelledby="dropdownMenu2">
+                                    <li>
+                                        <button class="dropdown-item py-2 px-5" type="button">Instructor Dashboard</button>
+                                    </li>
+                                    <li>
+                                        <button class="dropdown-item py-2 px-5" type="button">Student Dashboard</button>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item ">
-                                <a href="#" class="nav-link px-4">Pages</a>
+                                <a href="#" class="nav-link py-4 px-3">Pages</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link px-4">Elements</a>
+                                <a href="#" class="nav-link py-4 px-3">Elements</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link px-4">Blog</a>
+                                <a href="#" class="nav-link py-4 px-3">Blog</a>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <div class="col">
-                            <button class=" col btn btn-primary py-2 px-4 d-none d-lg-inline">Join Now</button>
+                        <div class="col-3 d-none d-lg-inline">
+                            <button class=" col btn btn-primary py-2 px-4">Join Now</button>
                         </div>
                     </div>
                 </div>
@@ -113,32 +142,30 @@
         <main>
             <div class="col-xs-12 py-5" style="background-image: url('https://rainbowit.net/html/histudy/assets/images/bg/bg-image-19.jpg'); background-repeat: no-repeat; height:100%; width:100%;">
                 <div class="container  text-white py-5">
-                    <div class="  py-5">
-                        <h1 class="col-lg-5 col-md-7 col-sm-12 fw-bolder display-5">
-                            <span id="brandName">LoStudy</span>
-                            Starter is a community for creative people
-                        </h1>
-                        <p class="h6" class="lead col-4">
-                            We just don't give our student only lecture but real life
+                    <h1 class="col-lg-5 col-md-7 col-sm-12 fw-bolder display-5">
+                        <span id="brandName">LoStudy</span>
+                        Starter is a community for creative people
+                    </h1>
+                    <p class="h6" class="lead col-4">
+                        We just don't give our student only lecture but real life
 						experience.
-                        </p>
-                        <div class="actions my-5">
-                            <button class="btn text-white border-1 border-white py-3 px-4 rounded-pill">
-                                Explore Courses
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                            <a href="#" class="text-white ms-5">
-                                Start learning
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
+                    </p>
+                    <div class="actions my-5">
+                        <button class="btn text-white border-1 border-white py-3 px-4 rounded-pill">
+                            Explore Courses
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <a href="#" class="text-white ms-5">
+                            Start learning
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="container courses my-5">
-                <div class="row fRow text-white text-center my-3">
-                    <div class="col-3">
-                        <div class="border-secondary border rounded p-3">
+                <div class="row fRow text-white text-center mb-2">
+                    <div class="col-xl-3 col-md-6 col-lg-6 col-xs-6 mt-2">
+                        <div class="border-secondary border rounded p-3  p-md-4">
                             <p class="h6">Web Design</p>
                             <span>
                                 15 courses
@@ -146,8 +173,8 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="border-secondary border rounded p-3">
+                    <div class="col-xl-3 col-md-6 col-lg-6 col-xs-6 mt-2">
+                        <div class="border-secondary border rounded p-3  p-md-4">
                             <p class="h6">Graphic Design</p>
                             <span>
                                 15 courses
@@ -155,8 +182,8 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-3 ">
-                        <div class="border-secondary border rounded p-3">
+                    <div class="col-xl-3 col-md-6 col-lg-6 col-xs-6 mt-2">
+                        <div class="border-secondary border rounded p-3  p-md-4">
                             <p class="h6">Personal Development</p>
                             <span>
                                 15 courses
@@ -164,8 +191,8 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-3 ">
-                        <div class="border-secondary border rounded p-3">
+                    <div class="col-xl-3 col-md-6 col-lg-6 col-xs-6 mt-2">
+                        <div class="border-secondary border rounded p-3  p-md-4">
                             <p class="h6">IT and Software</p>
                             <span>
                                 15 courses
@@ -175,8 +202,8 @@
                     </div>
                 </div>
                 <div class="row sRow text-white text-center">
-                    <div class="col-3 ">
-                        <div class="border-secondary border rounded p-3">
+                    <div class="col-xl-3 col-md-6 col-lg-6 col-xs-6 mb-2 ">
+                        <div class="border-secondary border rounded p-3  p-md-4">
                             <p class="h6">Sales Marketing</p>
                             <span>
                                 15 courses
@@ -184,8 +211,8 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-3 ">
-                        <div class="border-secondary border rounded p-3">
+                    <div class="col-xl-3 col-md-6 col-lg-6 col-xs-6 mb-2">
+                        <div class="border-secondary border rounded p-3  p-md-4">
                             <p class="h6">Art & humanities</p>
                             <span>
                                 15 courses
@@ -193,8 +220,8 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-3 ">
-                        <div class="border-secondary border rounded p-3">
+                    <div class="col-xl-3 col-md-6 col-lg-6 col-xs-6 mb-2 ">
+                        <div class="border-secondary border rounded p-3  p-md-4">
                             <p class="h6">Mobile Application</p>
                             <span>
                                 15 courses
@@ -202,8 +229,8 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-3 ">
-                        <div class="border-secondary border rounded p-3">
+                    <div class="col-xl-3 col-md-6 col-lg-6 col-xs-6 mb-2 ">
+                        <div class="border-secondary border rounded p-3  p-md-4">
                             <p class="h6">Finance & Accounting</p>
                             <span>
                                 15 courses
@@ -215,35 +242,31 @@
             </div>
             <div style="background-image: url('https://rainbowit.net/html/histudy/assets/images/bg/bg-image-20.jpg');background-size: cover;filter: grayscale(30%); background-position: center; background-attachment: fixed; background-repeat: no-repeat;height:100%; width:100%;">
                 <div class="container py-5 my-5">
-                    <div class="row py-5 my-5 text-white ms-5">
-                        <div class="col-2 py-5 m-5">
-                            <span class="digit display-3 fw-bold " id="counter">
-                                475 +
-                            </span>
-                            <span class="digitOf">Learners & counting</span>
+                    <div class="row py-5 my-5 text-white text-center">
+                        <div class="col-lg-3 py-5 col-md-6 col-xs-12">
+                            <span class="h1 fw-bold">475 +</span>
+                            <br>
+                            <span class="small">Learners & counting</span>
                         </div>
-                        <div class="col-2 py-5 m-5">
-                            <span class="digit display-3 fw-bold" id="counter2">
-                                45 +
-                            </span>
-                            <span class="digitOf">Courses & Video</span>
+                        <div class="col-lg-3 py-5 col-md-6 col-xs-12">
+                            <span class="h1 fw-bold">45 +</span>
+                            <br>
+                            <span class="small">Courses & Video</span>
                         </div>
-                        <div class="col-2 py-5 m-5">
-                            <span class="digit display-3 fw-bold" id="counter3">
-                                365 +
-                            </span>
-                            <span class="digitOf">Certified Students</span>
+                        <div class="col-lg-3 py-5 col-md-6 col-xs-12">
+                            <span class="h1 fw-bold">365 +</span>
+                            <br>
+                            <span class="small">Certified Students</span>
                         </div>
-                        <div class="col-2 py-5 m-5 ">
-                            <span class="digit display-3 fw-bold" id="counter4">
-                                215 +
-                            </span>
-                            <span class="digitOf">Certified Students</span>
+                        <div class="col-lg-3 py-5 col-md-6 col-xs-12">
+                            <span class="h1 fw-bold">155 +</span>
+                            <br>
+                            <span class="small">Certified Students</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container text-center">
+            <div class="container text-center feedback ">
                 <div class="head">
                     <h2 class="fw-bold display-6">Student's Feedback</h2>
                     <p class="lead col-10 m-auto">
@@ -251,160 +274,299 @@
 						career development, increase your skill with our histudy.
                     </p>
                 </div>
-                <div id="carouselExample" class="carousel slide h-25">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <!-- <img src=""  alt="..."> -->
-                          <div class="card-group">
-                            <div class="card border-0">
-                                <div class="userInfo">
-                                    <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
-                                    <div class="info">
-                                        <h3>Martha Moldanado</h3>
-                                        <span>Executive Chairman @ Google</span>
-                                    </div>
-                                </div>
-                                <div class="feed">
-                                    <p>
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Ullam nemo autem adipisci laborum, ratione dolorum?
-                                    </p>
-                                    <div class="rating">
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                    </div>
+                <button class="left" onclick="scroller('left')">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="right" onclick="scroller('right')">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="scroll">
+                    <div class="cardBox">
+                        <div class="card">
+                            <div class="userInfo">
+                                <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
+                                <div class="info">
+                                    <h3>Martha Moldanado</h3>
+                                    <span>Executive Chairman @ Google</span>
                                 </div>
                             </div>
-                            <div class="card border-0">
-                                <div class="userInfo">
-                                    <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
-                                    <div class="info">
-                                        <h3>Martha Moldanado</h3>
-                                        <span>Executive Chairman @ Google</span>
-                                    </div>
-                                </div>
-                                <div class="feed">
-                                    <p>
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Ullam nemo autem adipisci laborum, ratione dolorum?
-                                    </p>
-                                    <div class="rating">
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                    </div>
+                            <div class="feed">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ullam nemo autem adipisci laborum, ratione dolorum?
+                                </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
                                 </div>
                             </div>
-                            <div class="card border-0">
-                                <div class="userInfo">
-                                    <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
-                                    <div class="info">
-                                        <h3>Martha Moldanado</h3>
-                                        <span>Executive Chairman @ Google</span>
-                                    </div>
-                                </div>
-                                <div class="feed">
-                                    <p>
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Ullam nemo autem adipisci laborum, ratione dolorum?
-                                    </p>
-                                    <div class="rating">
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                    </div>
-                                </div>
-                            </div>  
-                      </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="card-group">
-                            <div class="card border-0">
-                                <div class="userInfo">
-                                    <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
-                                    <div class="info">
-                                        <h3>Martha Moldanado</h3>
-                                        <span>Executive Chairman @ Google</span>
-                                    </div>
-                                </div>
-                                <div class="feed">
-                                    <p>
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Ullam nemo autem adipisci laborum, ratione dolorum?
-                                    </p>
-                                    <div class="rating">
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-0">
-                                <div class="userInfo">
-                                    <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
-                                    <div class="info">
-                                        <h3>Martha Moldanado</h3>
-                                        <span>Executive Chairman @ Google</span>
-                                    </div>
-                                </div>
-                                <div class="feed">
-                                    <p>
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Ullam nemo autem adipisci laborum, ratione dolorum?
-                                    </p>
-                                    <div class="rating">
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-0">
-                                <div class="userInfo">
-                                    <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
-                                    <div class="info">
-                                        <h3>Martha Moldanado</h3>
-                                        <span>Executive Chairman @ Google</span>
-                                    </div>
-                                </div>
-                                <div class="feed">
-                                    <p>
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Ullam nemo autem adipisci laborum, ratione dolorum?
-                                    </p>
-                                    <div class="rating">
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                        <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
-                                    </div>
-                                </div>
-                            </div>  
-                      </div>
-                   
+                        </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon  bg-black" aria-hidden="true"></span>
-                      <span class="visually-hidden bg-black">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                      <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-        </main>
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+                    <div class="cardBox">
+                        <div class="card">
+                            <div class="userInfo">
+                                <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-02.png" alt="">
+                                <div class="info">
+                                    <h3>Avaya Morito</h3>
+                                    <span>CEO @ Google</span>
+                                </div>
+                            </div>
+                            <div class="feed">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ullam nemo autem adipisci laborum, ratione dolorum?
+                                </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardBox">
+                        <div class="card">
+                            <div class="userInfo">
+                                <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
+                                <div class="info">
+                                    <h3>Martha Moldanado</h3>
+                                    <span>Executive Chairman @ Google</span>
+                                </div>
+                            </div>
+                            <div class="feed">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ullam nemo autem adipisci laborum, ratione dolorum?
+                                </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardBox">
+                        <div class="card">
+                            <div class="userInfo">
+                                <img src="https://rainbowit.net/html/histudy/assets/images/testimonial/client-01.png" alt="">
+                                <div class="info">
+                                    <h3>Martha Moldanado</h3>
+                                    <span>Executive Chairman @ Google</span>
+                                </div>
+                            </div>
+                            <div class="feed">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Ullam nemo autem adipisci laborum, ratione dolorum?
+                                </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8f3c"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="news pt-5 mt-5">
+    <div class="container text-white pt-5 ">
+        <h2 class="fw-bolder display-5">Latest News</h2>
+        <div class="d-flex justify-content-between">
+            <p class=" col-8 ">
+                Learning communicate to global world and build a bright future and
+                            career development, increase your skill with our histudy.
+            </p>
+            <button class="btn border-1 rounded-pill border-light py-3 px-4">
+                <a href="#" class=" text-light">
+                    See All Articles
+                    <i class="fa-solid fa-arrow-right "></i>
+                </a>
+            </button>
+        </div>
+        <div class="mt-5 pt-5">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-6 rounded my-1 z-3">
+                    <div class="card">
+                        <p class="card-subtitle py-2 text-body-secondary">
+                            <i class="fa-regular fa-clock"></i>
+                            20 March 2023
+                        </p>
+                        <h3 class="fw-bold py-3">Learn From These You Learn.</h3>
+                        <a href="#" class="text-decoration-none link-dark">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6 rounded my-1 z-3">
+                    <div class="card">
+                        <p class="card-subtitle py-2 text-body-secondary">
+                            <i class="fa-regular fa-clock"></i>
+                            30 May 2023
+                        </p>
+                        <h3 class="fw-bold py-3">Think You're An Expert In?</h3>
+                        <a href="#" class="text-decoration-none link-dark">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6 rounded my-1 z-3">
+                    <div class="card">
+                        <p class="card-subtitle py-2 text-body-secondary">
+                            <i class="fa-regular fa-clock"></i>
+                            20 March 2023
+                        </p>
+                        <h3 class="fw-bold py-3">Seven Easy Rules Of Education.</h3>
+                        <a href="#" class="text-decoration-none link-dark">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bgCurve"></div>
+<div class="container">
+    <div class="col-8 text-center m-auto">
+        <h2 class="fw-bolder mb-4">Want to get special offers and Course updates?</h2>
+        <div class="input-group border border-dark rounded-pill p-2  my-5">
+            <input type="text" class="shadow-none border-0 col-lg-9 col-md-8 col-12 ms-1 form-control" placeholder="Enter Your Email">
+            <button class="input-group-append btn bg-primary text-white rounded-pill p-3 p-sm-0 p-xs-0 col-lg-3 col-md-4 col-sm-8">
+                Subscribe
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+            </button>
+        </div>
+    </div>
+</main>
+<footer class="container text-center text-lg-start mt-5 pt-5 border-top">
+    <div class="row my-4 text-start">
+        <div class="col-xl-3 col-lg-3 col-md-6">
+            <img
+                src="https://rainbowit.net/html/histudy/assets/images/logo/logo.png"
+                class="my-3"
+                width="35%"
+                alt=""
+            >
+            <p class="py-1 col-md-10">
+                We’re always in search for talented and motivated people. Don’t be shy introduce yourself!
+            </p>
+            <button class="btn border-primary border-2 rounded-pill fw-semibold py-3 px-4">Contact With US!</button>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+            <h4 class="fw-bold py-2">Useful Links</h4>
+            <ul class="list-group">
+                <li class="list-inline-item py-1 ">
+                    <a href="#" class="link-dark text-decoration-none">Marketplace</a>
+                </li>
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark text-decoration-none">kindergarten</a>
+                </li>
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark text-decoration-none">University</a>
+                </li>
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark text-decoration-none">GYM Coaching</a>
+                </li>
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark text-decoration-none">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+            <h4 class="fw-bold py-2">Our Company</h4>
+            <ul class="list-group">
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark text-decoration-none">Contact Us</a>
+                </li>
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark text-decoration-none">Become teacher</a>
+                </li>
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark text-decoration-none">Blog</a>
+                </li>
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark text-decoration-none">Instructor</a>
+                </li>
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark text-decoration-none py-3 my-5">Events</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+            <h4 class="fw-bold py-2">Get Contact</h4>
+            <ul class="list-group">
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark text-decoration-none">Phone: (232) 455-2323</a>
+                </li>
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark text-decoration-none">Email:rainbo@example.com</a>
+                </li>
+                <li class="list-inline-item py-2">
+                    <a href="#" class="link-dark  text-decoration-none">Location: North America</a>
+                </li>
+                <li class="list-inline-item mt-3">
+                    <a href="#" class="text-decoration-none link-dark px-1">
+                        <span>
+                            <i class="fa-brands fa-facebook-f px-1"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="text-decoration-none link-dark">
+                        <span>
+                            <i class="fa-brands fa-twitter px-1"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="text-decoration-none link-dark">
+                        <span>
+                            <i class="fa-brands fa-instagram px-1"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="text-decoration-none link-dark">
+                        <span>
+                            <i class="fa-brands fa-linkedin px-1"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <!-- </div> -->
+        </div>
+    </div>
+</section>
+<div class="container text-center p-4 border-top">
+    <div class="copy col col-md-6 col-sm-12 mx-auto">
+        <p>
+            Copyright &#169; 2023
+            <span class="footerHighlight">Rainbow-Themes.</span>
+            All Rights Reserved
+        </p>
+    </div>
+    <div class="others col col-md-12 col-sm-12  mx-auto">
+        <ul class=" col-12">
+            <li class="list-inline-item col pe-3 border-end">Terms of service</li>
+            <li class="list-inline-item col pe-3 border-end">Privacy policy</li>
+            <li class="list-inline-item col pe-3 border-end">Subscription</li>
+            <li class="list-inline-item col ">Login & Register</li>
+        </ul>
+    </div>
+</div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </html>
